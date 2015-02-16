@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-NL-1zv">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-NL-1zv">
                                 <rect key="frame" x="18" y="63" width="304" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445815913.71727198">
                                     <!--2015-02-16 21:45:13 +0000-->
@@ -27,27 +27,58 @@
                                     <action selector="datePickerClicked:" destination="9pv-A4-QxB" eventType="valueChanged" id="98D-AE-6Rd"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-3G-cbc">
-                                <rect key="frame" x="35" y="289" width="118" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-3G-cbc">
+                                <rect key="frame" x="35" y="289" width="271" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WYu-CC-Ai4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WYu-CC-Ai4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WYu-CC-Ai4"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZK-6w-lvn">
-                                <rect key="frame" x="213" y="284" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onClick:" destination="9pv-A4-QxB" eventType="touchUpInside" id="IG9-DN-kMv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FgB-3G-cbc" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="0Kt-PM-XWl"/>
+                            <constraint firstItem="eeE-NL-1zv" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="32" id="Pgg-qw-fSG"/>
+                            <constraint firstItem="eeE-NL-1zv" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="99" id="dKQ-js-Pzy"/>
+                            <constraint firstItem="FgB-3G-cbc" firstAttribute="top" secondItem="eeE-NL-1zv" secondAttribute="bottom" constant="41" id="fr6-b8-4gd"/>
+                            <constraint firstItem="FgB-3G-cbc" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="49" id="pUT-qV-tYf"/>
+                            <constraint firstItem="FgB-3G-cbc" firstAttribute="centerX" secondItem="eeE-NL-1zv" secondAttribute="centerX" id="zCp-BT-z5e"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Pgg-qw-fSG"/>
+                                <exclude reference="dKQ-js-Pzy"/>
+                                <exclude reference="0Kt-PM-XWl"/>
+                                <exclude reference="fr6-b8-4gd"/>
+                                <exclude reference="pUT-qV-tYf"/>
+                                <exclude reference="zCp-BT-z5e"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Pgg-qw-fSG"/>
+                                <include reference="dKQ-js-Pzy"/>
+                                <include reference="0Kt-PM-XWl"/>
+                                <include reference="fr6-b8-4gd"/>
+                                <include reference="pUT-qV-tYf"/>
+                                <include reference="zCp-BT-z5e"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="Btn" destination="2ZK-6w-lvn" id="EK1-mY-nZl"/>
                         <outlet property="DatePicker" destination="eeE-NL-1zv" id="0PW-1e-M1T"/>
                         <outlet property="dateLabel" destination="FgB-3G-cbc" id="pHm-HX-x4M"/>
                     </connections>
@@ -83,9 +114,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="116" y="136" width="169" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -193,7 +221,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&lt; AwesomeTextHere &gt;" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&lt; AwesomeTextHere >" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
                                 <rect key="frame" x="129" y="343" width="343" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.49999999999999994" width="1" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
