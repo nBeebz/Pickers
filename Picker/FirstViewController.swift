@@ -9,17 +9,23 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var dateLabel: UILabel!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad();
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBOutlet weak var DatePicker: UIDatePicker!
+    @IBOutlet weak var Btn: UIButton!
+    
+    @IBAction func datePickerClicked(sender: UIDatePicker) {
+        var dateFormatter = NSDateFormatter();
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle;
+        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle;
+        
+        var strDate = dateFormatter.stringFromDate( sender.date );
+        dateLabel.text = strDate;
     }
-
 
 }
 
