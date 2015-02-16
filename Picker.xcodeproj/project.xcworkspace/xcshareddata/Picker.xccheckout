@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>2B65246C-20D7-457A-A7DE-BEC25BB84AFB</string>
+=======
+	<string>E5FFF5CC-5353-43EA-BB34-BFE75DD5D722</string>
+>>>>>>> 244c5eb6ab9282c9df4b497dbff69cf443e9bcac
 	<key>IDESourceControlProjectName</key>
 	<string>Picker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +38,11 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>5E13BAABE311BBB65CB9DF4CD7D8E5A26FC34547</string>
 			<key>IDESourceControlWCCName</key>
+<<<<<<< HEAD
 			<string>Picker</string>
+=======
+			<string>Pickers</string>
+>>>>>>> 244c5eb6ab9282c9df4b497dbff69cf443e9bcac
 		</dict>
 	</array>
 </dict>
