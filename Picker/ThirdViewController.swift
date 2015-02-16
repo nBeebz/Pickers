@@ -2,21 +2,12 @@
 //  ThirdViewController.swift
 //  Picker
 //
-<<<<<<< HEAD
-//  Created by Nav Bhatti on 2015-02-16.
-=======
 //  Created by Team5 on 2015-02-16.
->>>>>>> d65b7a8125638338f4ee3a47e2c905297432e33a
 //  Copyright (c) 2015 Nav Bhatti. All rights reserved.
 //
 
 import UIKit
-<<<<<<< HEAD
 
-class ThirdViewController: UIViewController {
-
-}
-=======
 class ThirdViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
     let pickerData = ["8", "12", "16", "24", "32", "48", "72"]
@@ -61,4 +52,3 @@ class ThirdViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         
     }
 }
->>>>>>> d65b7a8125638338f4ee3a47e2c905297432e33a

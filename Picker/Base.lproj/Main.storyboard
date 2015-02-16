@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Date-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Picker" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,7 +45,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Date" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="Btn" destination="2ZK-6w-lvn" id="EK1-mY-nZl"/>
                         <outlet property="DatePicker" destination="eeE-NL-1zv" id="0PW-1e-M1T"/>
@@ -55,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-336"/>
         </scene>
-        <!--Second-->
+        <!--Colour-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Picker" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +71,7 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPf-hL-7oe">
                                 <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
                             </pickerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Colour View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Colour View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
                                 <rect key="frame" x="195" y="279" width="210" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
@@ -108,13 +109,13 @@
                                 <exclude reference="euR-Cx-uuz"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="1Cr-7W-ZfJ"/>
-                                <exclude reference="fZT-Vk-tOd"/>
+                                <exclude reference="285-Vi-QuK"/>
+                                <exclude reference="hbC-Tk-50a"/>
                                 <exclude reference="2ST-cr-pnQ"/>
                                 <exclude reference="8p8-Ms-ZBy"/>
                                 <exclude reference="cmc-MK-wuz"/>
-                                <exclude reference="285-Vi-QuK"/>
-                                <exclude reference="hbC-Tk-50a"/>
+                                <exclude reference="1Cr-7W-ZfJ"/>
+                                <exclude reference="fZT-Vk-tOd"/>
                                 <exclude reference="ZsO-UT-Ri9"/>
                             </mask>
                         </variation>
@@ -124,20 +125,20 @@
                                 <include reference="euR-Cx-uuz"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="285-Vi-QuK"/>
+                                <include reference="hbC-Tk-50a"/>
+                                <include reference="2ST-cr-pnQ"/>
+                                <include reference="8p8-Ms-ZBy"/>
+                                <include reference="cmc-MK-wuz"/>
                                 <include reference="1Cr-7W-ZfJ"/>
                                 <include reference="fZT-Vk-tOd"/>
                                 <exclude reference="qqM-NS-xev"/>
                                 <exclude reference="qzY-Ky-pLD"/>
-                                <include reference="2ST-cr-pnQ"/>
-                                <include reference="8p8-Ms-ZBy"/>
-                                <include reference="cmc-MK-wuz"/>
-                                <include reference="285-Vi-QuK"/>
-                                <include reference="hbC-Tk-50a"/>
                                 <include reference="ZsO-UT-Ri9"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Colour" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="colourLabel" destination="euR-Cx-uuz" id="5oR-wB-wWk"/>
                         <outlet property="colourPicker" destination="KPf-hL-7oe" id="QGG-OI-2B9"/>
@@ -210,7 +211,7 @@
                             <constraint firstItem="ATq-vb-UE3" firstAttribute="leading" secondItem="YfW-we-REX" secondAttribute="leading" id="jvW-a1-PCK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" id="wbj-O8-hVV"/>
+                    <tabBarItem key="tabBarItem" title="Font" image="first" id="wbj-O8-hVV"/>
                     <connections>
                         <outlet property="k" destination="YfW-we-REX" id="gg9-eV-Lqp"/>
                         <outlet property="myPicker" destination="ATq-vb-UE3" id="YoG-iu-a1l"/>
