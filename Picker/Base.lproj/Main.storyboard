@@ -116,11 +116,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="ATq-vb-UE3">
-                                <rect key="frame" x="0.0" y="166" width="600" height="162"/>
+                            <pickerView contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATq-vb-UE3">
+                                <rect key="frame" x="0.0" y="108" width="600" height="162"/>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYC-Gd-pre">
-                                <rect key="frame" x="256" y="80" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Font Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYC-Gd-pre">
+                                <rect key="frame" x="256" y="43" width="88" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="oSY-OO-GtF"/>
                                     <constraint firstAttribute="width" constant="88" id="tXI-sm-HA3"/>
@@ -129,8 +129,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Jack jumped over the bean stock." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
-                                <rect key="frame" x="129" y="431" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&lt; AwesomeTextHere &gt;" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
+                                <rect key="frame" x="129" y="343" width="343" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.49999999999999994" width="1" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
