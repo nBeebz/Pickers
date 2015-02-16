@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--First-->
@@ -66,29 +67,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPf-hL-7oe">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Colour View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="195" y="279" width="210" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="215.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euR-Cx-uuz">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="116" y="136" width="169" height="21"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="25" id="1Cr-7W-ZfJ"/>
+                            <constraint firstAttribute="trailing" secondItem="KPf-hL-7oe" secondAttribute="trailing" id="285-Vi-QuK"/>
+                            <constraint firstItem="euR-Cx-uuz" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="2ST-cr-pnQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="euR-Cx-uuz" secondAttribute="trailing" constant="99" id="8p8-Ms-ZBy"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="KPf-hL-7oe" secondAttribute="bottom" constant="190" id="ZsO-UT-Ri9"/>
+                            <constraint firstItem="euR-Cx-uuz" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="35" id="cmc-MK-wuz"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="centerX" secondItem="KPf-hL-7oe" secondAttribute="centerX" id="fZT-Vk-tOd"/>
+                            <constraint firstItem="KPf-hL-7oe" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="hbC-Tk-50a"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD">
+                                <variation key="widthClass=compact" constant="234"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KPf-hL-7oe"/>
+                                <exclude reference="euR-Cx-uuz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1Cr-7W-ZfJ"/>
+                                <exclude reference="fZT-Vk-tOd"/>
+                                <exclude reference="2ST-cr-pnQ"/>
+                                <exclude reference="8p8-Ms-ZBy"/>
+                                <exclude reference="cmc-MK-wuz"/>
+                                <exclude reference="285-Vi-QuK"/>
+                                <exclude reference="hbC-Tk-50a"/>
+                                <exclude reference="ZsO-UT-Ri9"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KPf-hL-7oe"/>
+                                <include reference="euR-Cx-uuz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1Cr-7W-ZfJ"/>
+                                <include reference="fZT-Vk-tOd"/>
+                                <exclude reference="qqM-NS-xev"/>
+                                <exclude reference="qzY-Ky-pLD"/>
+                                <include reference="2ST-cr-pnQ"/>
+                                <include reference="8p8-Ms-ZBy"/>
+                                <include reference="cmc-MK-wuz"/>
+                                <include reference="285-Vi-QuK"/>
+                                <include reference="hbC-Tk-50a"/>
+                                <include reference="ZsO-UT-Ri9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="colourLabel" destination="euR-Cx-uuz" id="5oR-wB-wWk"/>
+                        <outlet property="colourPicker" destination="KPf-hL-7oe" id="QGG-OI-2B9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
