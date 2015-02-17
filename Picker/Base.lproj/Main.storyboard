@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -258,7 +258,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&lt; AwesomeTextHere &gt;" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&lt; AwesomeTextHere >" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
                                 <rect key="frame" x="129" y="343" width="343" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.49999999999999994" width="1" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -371,9 +371,9 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5Hf-ua-7lf"/>
-        <segue reference="8ED-Bz-6Ti"/>
-        <segue reference="GSq-KG-LUr"/>
+        <segue reference="lzU-1b-eKA"/>
+        <segue reference="j2P-w3-eNh"/>
+        <segue reference="8Ap-UK-UwB"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.052085951495135507" blue="0.083936600490503888" alpha="1" colorSpace="calibratedRGB"/>
 </document>

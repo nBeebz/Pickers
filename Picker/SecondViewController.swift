@@ -51,7 +51,7 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
     
     override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "colourSegue") {
-            var svc = segue!.destinationViewController as FourthViewController;
+            var svc = segue!.destinationViewController as ThirdViewController;
             
             svc.dateData = dateData
             svc.colourData = colourLabel.textColor;

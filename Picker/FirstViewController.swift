@@ -33,7 +33,7 @@ class FirstViewController: UIViewController {
 
     override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
         if (segue.identifier == "dateSegue") {
-            var svc = segue!.destinationViewController as FourthViewController;
+            var svc = segue!.destinationViewController as SecondViewController;
             
             svc.dateData = dateLabel.text
             
