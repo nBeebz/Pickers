@@ -12,6 +12,10 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
 
     var dateData:String!
     
+    @IBAction func continueButton(sender: UIButton) {
+        self.performSegueWithIdentifier("colourSegue", sender:nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         colourPicker.dataSource = self

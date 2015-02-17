@@ -11,8 +11,8 @@ import UIKit
 class FourthViewController: UIViewController {
     
     var dateData:String!
-    var colourData:UIColor;
-    var fontData:UIFont;
+    var colourData:UIColor!
+    var fontData:UIFont!
 
     
     @IBOutlet var finalUIView: UIView!
@@ -20,7 +20,7 @@ class FourthViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad();
-        finalTextField.text = dataData;
+        finalTextField.text = dateData;
         finalTextField.font = fontData;
         finalTextField.textColor = colourData;
     }

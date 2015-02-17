@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-NL-1zv">
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eeE-NL-1zv">
                                 <rect key="frame" x="18" y="63" width="304" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445815913.71727198">
                                     <!--2015-02-16 21:45:13 +0000-->
@@ -27,7 +27,7 @@
                                     <action selector="datePickerClicked:" destination="9pv-A4-QxB" eventType="valueChanged" id="98D-AE-6Rd"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-3G-cbc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-3G-cbc">
                                 <rect key="frame" x="35" y="289" width="271" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="WYu-CC-Ai4"/>
@@ -144,6 +144,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="312" y="513" width="72" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="continueButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="aQj-p3-2qa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -255,7 +258,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&lt; AwesomeTextHere >" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&lt; AwesomeTextHere &gt;" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgV-hT-B6W">
                                 <rect key="frame" x="129" y="343" width="343" height="100"/>
                                 <rect key="contentStretch" x="0.0" y="0.49999999999999994" width="1" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -269,6 +272,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="317" y="513" width="67" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="continueButton:" destination="cLd-rv-d43" eventType="touchUpInside" id="nJL-CB-Vzz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -314,6 +320,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ViF-6b-lRh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3iZ-Dg-9Ls">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aFw-6b-0Jl">
@@ -364,9 +371,9 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GSq-KG-LUr"/>
-        <segue reference="8Ap-UK-UwB"/>
+        <segue reference="5Hf-ua-7lf"/>
         <segue reference="8ED-Bz-6Ti"/>
+        <segue reference="GSq-KG-LUr"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="0.052085951495135507" blue="0.083936600490503888" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -28,6 +28,10 @@ class ThirdViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         myPicker.delegate = self
     }
     
+    @IBAction func continueButton(sender: UIButton) {
+        self.performSegueWithIdentifier("fontSegue", sender:nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
