@@ -10,6 +10,10 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    @IBAction func buttonClick(sender: UIButton) {
+        self.performSegueWithIdentifier("dateSegue", sender:nil)
+    }
+    
     @IBOutlet weak var dateLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -27,5 +31,14 @@ class FirstViewController: UIViewController {
         dateLabel.text = strDate;
     }
 
+    override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
+        if (segue.identifier == "dateSegue") {
+            var svc = segue!.destinationViewController as FourthViewController;
+            
+            svc.dateData = dateLabel.text
+            
+            
+        }
+    }
 }
 

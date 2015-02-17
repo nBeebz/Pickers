@@ -10,6 +10,9 @@ import UIKit
 
 class ThirdViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
+    var dateData:String!
+    var colourData:UIColor!
+    
     let pickerData = ["8", "12", "16", "24", "32", "48", "72"]
     let pickerNumbers = [UIFont (name: "Arial", size: 8.0), UIFont (name: "Arial", size: 12.0), UIFont (name: "Arial", size: 16.0), UIFont (name: "Arial", size: 24.0), UIFont (name: "Arial", size: 32.0), UIFont (name: "Arial", size: 48.0), UIFont (name: "Arial", size: 72.0)]
     
@@ -50,5 +53,16 @@ class ThirdViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
         var x = pickerNumbers[row]
         textLabel.font = x;
         
+    }
+    
+    override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
+        if (segue.identifier == "fontSegue") {
+            var svc = segue!.destinationViewController as FourthViewController;
+            
+            svc.dateData = dateData
+            svc.colourData = colourData
+            svc.fontData = textLabel.font;
+            
+        }
     }
 }

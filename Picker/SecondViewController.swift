@@ -10,6 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
 
+    var dateData:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         colourPicker.dataSource = self
@@ -41,6 +43,17 @@ class SecondViewController: UIViewController,UIPickerViewDataSource,UIPickerView
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         colourLabel.text = pickerData[row]
         colourLabel.textColor = pickerColour[row]
+    }
+    
+    override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject!) {
+        if (segue.identifier == "colourSegue") {
+            var svc = segue!.destinationViewController as FourthViewController;
+            
+            svc.dateData = dateData
+            svc.colourData = colourLabel.textColor;
+           
+            
+        }
     }
     
 }

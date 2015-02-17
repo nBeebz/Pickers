@@ -15,7 +15,7 @@
 		59C64FDB1A929AD000AD412F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C64FDA1A929AD000AD412F /* Images.xcassets */; };
 		59C64FDE1A929AD000AD412F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59C64FDC1A929AD000AD412F /* LaunchScreen.xib */; };
 		59C64FEA1A929AD000AD412F /* PickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C64FE91A929AD000AD412F /* PickerTests.swift */; };
-		59C64FF41A929DF400AD412F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C64FF31A929DF400AD412F /* ThirdViewController.swift */; };
+		59C64FF61A92B7C600AD412F /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C64FF51A92B7C600AD412F /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 		59C64FE81A929AD000AD412F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59C64FE91A929AD000AD412F /* PickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTests.swift; sourceTree = "<group>"; };
 		59C64FF31A929DF400AD412F /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		59C64FF51A92B7C600AD412F /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 				59C64FD31A929AD000AD412F /* FirstViewController.swift */,
 				59C64FD51A929AD000AD412F /* SecondViewController.swift */,
 				34BB2FAC1A92A1CF0053E02C /* ThirdViewController.swift */,
+				59C64FF51A92B7C600AD412F /* FourthViewController.swift */,
 				59C64FD71A929AD000AD412F /* Main.storyboard */,
 				59C64FDA1A929AD000AD412F /* Images.xcassets */,
 				59C64FDC1A929AD000AD412F /* LaunchScreen.xib */,
@@ -225,6 +227,7 @@
 				59C64FD21A929AD000AD412F /* AppDelegate.swift in Sources */,
 				34BB2FAD1A92A1CF0053E02C /* ThirdViewController.swift in Sources */,
 				59C64FD41A929AD000AD412F /* FirstViewController.swift in Sources */,
+				59C64FF61A92B7C600AD412F /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
